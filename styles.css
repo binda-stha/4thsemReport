@@ -1,0 +1,131 @@
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff ;
+    margin-left: 30px; /* Adds a 20px gap on the left */
+    margin-right: 30px; /* Adds a 20px gap on the right */   
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e0e7ec;
+   
+}
+.profile {
+    box-sizing: border-box;
+    
+    width:55%;  
+    background-color: #fff;
+}
+.profile-pic {
+    border-radius: 50%;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.profile-name{
+    display: flex;
+    height:60px;
+}
+.profile-post {
+    width: 685px;  /* Set the width of the div */
+      height: 500px; /* Set the height of the div */
+      overflow: hidden;
+      background-size: cover; /* Ensures the background image covers the entire div */
+      background-position: center; /* Centers the image within the div */
+      background-repeat: no-repeat; /* Prevents background repetition */
+      
+}
+.profile-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    
+}
+.profile-likes {
+    border: 1px solid black;
+}
+.profile-likes img  {
+    gap: 15px;
+    margin: 5px;
+}
+.profile-body {
+    
+    border: 1px solid black;
+}
+.profile-body p {
+    margin:6px;
+    
+}
+.profile-comment {
+    display: flex;
+    gap:400px;
+    border: 1px solid black;
+}
+.pro-post {
+   color:#007BFF;
+   margin-top: 8px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+     
+}
+
+.container {
+    display: flex;
+    margin:10px;
+}
+.side-bar {
+    padding: 50px;
+}
+.side-bar h3  {
+    margin-bottom: 5px;
+}
+.side-bar p {
+    margin-top: 0;
+}
+.user-menu a {
+    padding:5px;
+}
+.follow {
+    margin: -20px;
+    margin-top: 5px;
+    
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+button:hover {
+    background-color: palevioletred;
+    color: black;
+}
+.side-bar h4 {
+    margin-bottom: 5px;
+}
+.side-bar p {
+    margin-top: 0;
+}
+
