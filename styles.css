@@ -19,8 +19,8 @@ body {
 }
 .profile {
     box-sizing: border-box;
-    
-    width:55%;  
+    flex: "2";
+    width:100%;  
     background-color: #fff;
 }
 .profile-pic {
@@ -50,7 +50,7 @@ body {
     
 }
 .profile-likes {
-    border: 1px solid black;
+    border: 1px solid grey;
 }
 .profile-likes img  {
     gap: 15px;
@@ -58,7 +58,7 @@ body {
 }
 .profile-body {
     
-    border: 1px solid black;
+    border: 1px solid grey;
 }
 .profile-body p {
     margin:6px;
@@ -66,8 +66,8 @@ body {
 }
 .profile-comment {
     display: flex;
-    gap:400px;
-    border: 1px solid black;
+    gap:20px;
+    border: 1px solid grey;
 }
 .pro-post {
    color:#007BFF;
@@ -89,6 +89,7 @@ input[type="text"] {
 }
 .side-bar {
     padding: 50px;
+    flex: "1";
 }
 .side-bar h3  {
     margin-bottom: 5px;
@@ -96,9 +97,21 @@ input[type="text"] {
 .side-bar p {
     margin-top: 0;
 }
-.user-menu a {
-    padding:5px;
+.user-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; /* Distributes items with equal space between */
+    padding: 0;
+    margin: 0;
 }
+.user-menu a {
+    
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    display: block;
+}
+
 .follow {
     margin: -20px;
     margin-top: 5px;
@@ -106,21 +119,20 @@ input[type="text"] {
 }
 
 button {
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
+    
     
 }
 
 
 button:hover {
-    background-color: palevioletred;
-    color: black;
+    background-color:#438ddb;
+    color:black;
 }
 .side-bar h4 {
     margin-bottom: 5px;
@@ -128,4 +140,53 @@ button:hover {
 .side-bar p {
     margin-top: 0;
 }
+body {
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .container {
+        flex-direction: column; /* Stacks elements vertically on smaller screens */
+    }
+    
+    .header {
+        flex-direction: row; /* Stacks elements vertically on smaller screens */
+    }
+}
+
+/* Media query for mobile (480px and below) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%; /* Full width on small screens */
+    }
+    .header{
+        width: 100%; /* Full width on small screens */
+    }
+}
+.sign {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+   
+    
+}
+
 
