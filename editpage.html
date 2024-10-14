@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Edit Profile</h2>
+        <div class="profile-pic">
+            <img src="./images/pic.jpg" alt="Profile Picture" class="profileImage">
+            <div class="camera-icon"><img src="./images/camera.png" width="1px" height="1px"> </div>
+           
+        </div>
+
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="first name" name="first-name">
+                <input type="text" placeholder="last name" name="last-name">
+            </div>
+            
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="male" checked> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder="email" name="email">
+            </div>
+            <div class="input-group">
+                <input type="username" placeholder="username" name="email">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="password" name="email">
+            </div>
+            <input type="submit" value="Update Profile">
+        </form>
+    </div>
+
+    
+</body>
+</html>
